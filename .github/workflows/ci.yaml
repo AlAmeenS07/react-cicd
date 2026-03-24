@@ -20,10 +20,10 @@ jobs:
           node-version: 22
 
       - name: install dependencies
-        uses: npm install
+        run: npm install
 
       - name: run lint
-        uses: npm run lint
+        run: npm run lint
 
       - name: build project
-        uses: npm run build
+        run: npm run build
